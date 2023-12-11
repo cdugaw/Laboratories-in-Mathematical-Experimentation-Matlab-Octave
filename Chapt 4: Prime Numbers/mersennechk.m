@@ -7,9 +7,13 @@ function PP=mersennechk(p)
 %Determines if 2^p-1 is prime for a given a positive integer p
 %
 %Inputs
-%  n - a positive integer
+%  p - a positive integer less than 65
 %Output
 %  PP - indicates if 2^p-1 is prime
 %       PP=1 if 2^p-1 is prime, PP=0 if 2^p-1 is not prime
+
+if p>64
+  error('Input p must be less than 65')
+end; %if
 
 PP=isprime(2^p-1);
