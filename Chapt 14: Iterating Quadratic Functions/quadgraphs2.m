@@ -12,7 +12,7 @@ N=20;  %number of iterates to plot
 while go
   title('Click Feigenbaum Diagram or right click to quit')
   subplot(2,2,3) %bottom left graph
-  x=iterquad(a,x0,N,1); %create cobweb plot
+  x=itergraph(a,x0,N); %create cobweb plot
   title(['a=',num2str(a)])
   xp=linspace(0,1); %vector of x for plotting
   fp=a*xp.*(1-xp);  %f(x)
