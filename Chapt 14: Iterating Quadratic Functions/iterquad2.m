@@ -25,8 +25,8 @@ if nargin<4 %function called with fewer than 4 inputs
 end
 
 
-x1=iterquad(a,x01,N,0); %solve with intial condition x01
-x2=iterquad(a,x02,N,0); %solve with intial condition x02
+x1=iterquad(a,x01,N); %solve with intial condition x01
+x2=iterquad(a,x02,N); %solve with intial condition x02
 differ=abs(x1-x2); %absolute difference
 ivals=0:N-1; %i values
 
