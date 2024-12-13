@@ -18,7 +18,7 @@ if nargin<3 %if "a" not given, set a=4
   a=4;
 end
 
-x=iterquad(a,x0,N,0); %run iterquad
+x=iterquad(a,x0,N); %run iterquad
 freq=zeros(1,2);      %vector of frequencies
 freq(1)=sum(x<=0.5);  %count less or equal 1/2
 freq(2)=sum(x>0.5);   %count greater than 1/2
